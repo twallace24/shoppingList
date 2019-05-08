@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Theodore Wallace Shopping List</title>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Martel+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+    <header class="container">
+        <div class="intro">
+            <img class="shoppingCartImage" src="https://png.pngtree.com/svg/20160225/575816528b.svg" alt="Picture with a computer withing the shopping cart">
+            <h1>Shopping List</h1>
+            <h2>By: Theodore Wallace </h2>
+            <p>It's time to make your shopping list<br>
+Enter each item in the textbox below, then press add!</p>
+        </div>
+    </header>
+
+    <!-- ***** Reset list starts here  ***** -->
+
+    <div class="container">
+        <form class="resetcontainer ">
+            <button class="reset-list" name="" type="submit" value="">Reset</button>
+            <button class="checked" name="" type="submit" value="">Check</button>
+        </form>
+    </div>
+
+    <!-- ***** text form for groceries insertion starts here ***** -->
+
+    <div class="list-area-insertion container">
+        <form>
+            <input type="text" class="shoppinglistitem" name="shoppinglistitem" value="" placeholder="Enter each item and click add"></input>
+            <button name="" type="submit" id="add" value="add">Add</button>
+        </form>
+    </div>
+
+
+
+    <!-- ***** Dynamically added content goes to the div below ***** -->
+
+    <div class="list"></div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+ 
+
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
